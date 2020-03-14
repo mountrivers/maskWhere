@@ -71,5 +71,5 @@ public class IDManger {
     public static void SetNaverSdkClientId(Context context) {
         NaverMapSdk.getInstance(context).setClient(
                 new NaverMapSdk.NaverCloudPlatformClient("6wb9x2vv5k"));
-    }    
+    }
 }
