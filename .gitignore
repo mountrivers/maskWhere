@@ -13,3 +13,4 @@
 .externalNativeBuild
 .cxx
 app/src/main/java/com/sanha/maskwhere/IDManger.java
+app/release/app-release.aab
