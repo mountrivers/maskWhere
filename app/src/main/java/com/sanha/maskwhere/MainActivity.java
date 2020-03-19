@@ -125,19 +125,6 @@ public class MainActivity extends FragmentActivity
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,HelpActivity.class);
                 startActivity(intent);
-                /*
-                AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
-                alertDialog.setTitle("안내");
-                alertDialog.setMessage("해당버전은 베타버전이라, 오작동이 있을 수 있습니다.\n 데이터는 5~10분간격으로 업데이트 되며, 갱신을 눌러 확인하시면 됩니다.\n 건강 보험심사원에서 데이터를 그대로 받아오지만, 실제와 상이할 수 있습니다.\n 초록:100개이상/ 노랑:30~99개 / 빨강 2~29개/ 회색 0~2개 ");
-                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-
-
-                            }
-                        });
-                alertDialog.show();*/
             }
         });
     }
@@ -170,7 +157,6 @@ public class MainActivity extends FragmentActivity
 
     private void setMap() {
 
-        // infowindow . 정보창
         InfoWindow infoWindow = new InfoWindow();
         infoWindow.setAdapter(new InfoWindow.DefaultTextAdapter(this) {
             @NonNull
